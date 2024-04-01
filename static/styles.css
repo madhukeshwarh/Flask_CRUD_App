@@ -1,0 +1,162 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: #000;
+}
+/* styles.css */
+.header {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+}
+
+.header-sub {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-sub .container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-sub .container h2 {
+    margin: 0;
+    font-size: 1.5em; /* Reduce font size */
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px; /* Reduce padding */
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.add-button:hover {
+    background-color:rgb(153, 227, 240);
+}
+
+
+
+.container {
+    margin-top: 80px; /* Adjust according to the height of your header */
+}
+/* styles.css */
+.employee-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.employee-list th, .employee-list td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.employee-list th {
+    background-color: #f2f2f2;
+}
+
+.employee-list tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+.employee-list tr:hover {
+    background-color: #ddd; /* Hover color */
+}
+/* styles.css */
+.employee-list th {
+    background-color: #4CAF50; /* Change the background color of table header */
+    color: white; /* Change the text color of table header */
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.employee-list td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.employee-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.employee-list tr:hover {
+    background-color: #ddd;
+}

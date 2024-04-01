@@ -1,0 +1,24 @@
+<!-- templates/add_employee.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Employee</h1>
+        <form action="/add" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position" required><br>
+            <label for="department">Department:</label><br>
+            <input type="text" id="department" name="department" required><br><br>
+            <input type="submit" value="Add Employee">
+        </form>
+    </div>
+</body>
+</html>

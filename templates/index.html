@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Flask CRUD Application</h1>
+    </div>
+    <div class="header-sub">
+        <div class="container">
+            <h2>Employee Management</h2>
+            <a href="{{ url_for('add_employee_page') }}" class="add-button">Add Employee</a>
+        </div>
+    </div>
+    <div class="employee-list container">
+        <h2>Employee List</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.position }}</td>
+                <td>{{ employee.department }}</td>
+                <td>
+                    <a href="{{ url_for('update_employee', id=employee.id) }}">✏️</a>
+                    <a href="#" onclick="confirmDelete('{{ employee.id }}')">🗑️</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <script>
+        function confirmDelete(id) {
+            var confirmation = confirm("Are you sure you want to delete this employee?");
+            if (confirmation) {
+                window.location.href = "/delete/" + id;
+            }
+        }
+    </script>
+</body>
+</html>
